@@ -1,5 +1,6 @@
 {
-  "buildCommand": "cd defi-simulator && npm install && npm run build",
+  "installCommand": "cd defi-simulator && npm install",
+  "buildCommand": "cd defi-simulator && npm run build",
   "outputDirectory": "defi-simulator/dist",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
