@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "fed68243e5eeb99f",
+    "type": "split",
+    "children": [
+      {
+        "id": "013dfada902719b3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eae4f539f24f697c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "defi-simulator/README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4fe773578600ab50",
+    "type": "split",
+    "children": [
+      {
+        "id": "3fd81ea08c982ea1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "28d8ede6ee71106a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "bffe3adc176179c2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "086c01d328831bc3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 228.5
+  },
+  "right": {
+    "id": "b9a6d89ac67299f1",
+    "type": "split",
+    "children": [
+      {
+        "id": "90618eb2f449ee97",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11cf8aeed8fe34ff",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "defi-simulator/README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for README"
+            }
+          },
+          {
+            "id": "16336263c32fd17e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "defi-simulator/README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from README"
+            }
+          },
+          {
+            "id": "25eafb13695f0f5c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "8db3f42c27555b4a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "58db35ede8a2ca27",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "defi-simulator/README.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "eae4f539f24f697c",
+  "lastOpenFiles": [
+    "initial_prompt.md",
+    "defi-simulator/src/pages/Positions.jsx",
+    "defi-simulator/src/utils/uniswapV3Math.test.js",
+    "defi-simulator/src/components/wizard/LiquidityWizard.jsx",
+    "defi-simulator/src/components/wizard/Step4Summary.jsx",
+    "defi-simulator/src/components/wizard/Step3TokenAmounts.jsx",
+    "defi-simulator/src/components/wizard/Step2PriceRange.jsx",
+    "defi-simulator/src/components/wizard/Step1PoolSelection.jsx",
+    "defi-simulator/src/components/wizard",
+    "defi-simulator/node_modules/@reduxjs/toolkit/src/query/tests/mocks/server.ts",
+    "defi-simulator/node_modules/@reduxjs/toolkit/src/query/tests/mocks/handlers.ts",
+    "defi-simulator/node_modules/@reduxjs/toolkit/README.md",
+    "defi-simulator/node_modules/@types/use-sync-external-store/README.md",
+    "defi-simulator/node_modules/@standard-schema/spec/README.md",
+    "defi-simulator/node_modules/@standard-schema/utils/README.md",
+    "defi-simulator/node_modules/d3-path/README.md",
+    "defi-simulator/node_modules/d3-time-format/README.md",
+    "defi-simulator/node_modules/d3-format/README.md",
+    "defi-simulator/node_modules/d3-color/README.md",
+    "defi-simulator/node_modules/internmap/README.md",
+    "defi-simulator/node_modules/@types/d3-path/README.md",
+    "defi-simulator/node_modules/@types/d3-color/README.md",
+    "defi-simulator/node_modules/d3-timer/README.md",
+    "defi-simulator/node_modules/d3-time/README.md",
+    "defi-simulator/node_modules/d3-shape/README.md",
+    "defi-simulator/node_modules/d3-scale/README.md",
+    "defi-simulator/node_modules/d3-interpolate/README.md",
+    "defi-simulator/node_modules/d3-ease/README.md",
+    "defi-simulator/node_modules/d3-array/README.md",
+    "defi-simulator/node_modules/@types/d3-interpolate/README.md",
+    "defi-simulator/node_modules/@types/d3-timer/README.md",
+    "defi-simulator/node_modules/@types/d3-time/README.md",
+    "defi-simulator/node_modules/@types/d3-shape/README.md",
+    "defi-simulator/node_modules/@types/d3-scale/README.md",
+    "defi-simulator/node_modules/@types/d3-array/README.md",
+    "defi-simulator/node_modules/@types/d3-ease/README.md",
+    "defi-simulator/src/assets/react.svg",
+    "defi-simulator/public/vite.svg"
+  ]
+}

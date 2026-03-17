@@ -1,0 +1,343 @@
+{
+  "sidebar": {
+    "title": "DeFi Simulator",
+    "subtitle": "Uniswap V3 Protocol",
+    "nav": {
+      "home": "Home",
+      "simulator": "Simulator",
+      "positions": "Positions",
+      "calculator": "Calculator",
+      "flashLoan": "Flash Loan",
+      "learn": "Learn"
+    },
+    "disclaimer": "Educational simulation platform. Not financial advice."
+  },
+  "home": {
+    "badge": "Powered by Uniswap V3",
+    "title": "DeFi Liquidity Pool Simulator",
+    "subtitle": "Master Uniswap V3 liquidity provision through interactive simulation. Explore fees, impermanent loss, and APR dynamics with live market data — zero capital risk.",
+    "cta": {
+      "launch": "Launch Simulator →",
+      "docs": "Read Documentation"
+    },
+    "features": {
+      "liveData": {
+        "title": "Live Market Data",
+        "description": "Real-time prices via Coinbase API for ETH, BTC, and SOL trading pairs"
+      },
+      "feeSimulation": {
+        "title": "Fee Simulation",
+        "description": "Linear fee generation modeled on realistic APR projections"
+      },
+      "riskAnalytics": {
+        "title": "Risk Analytics",
+        "description": "Real-time impermanent loss calculations and position tracking"
+      },
+      "education": {
+        "title": "DeFi Education",
+        "description": "In-depth guides on liquidity provision strategies and mechanics"
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "Four simple steps to master liquidity provision",
+      "steps": {
+        "step1": {
+          "title": "Configure Treasury",
+          "description": "Initialize virtual capital allocation (default $10,000) for position simulation."
+        },
+        "step2": {
+          "title": "Select Pool Pairs",
+          "description": "Choose liquidity pools (ETH/USDC, BTC/USDC, SOL/USDC) with live market pricing."
+        },
+        "step3": {
+          "title": "Deploy Capital",
+          "description": "Distribute treasury allocation across pools with precision controls and price range selection."
+        },
+        "step4": {
+          "title": "Monitor & Analyze",
+          "description": "Track fee accrual, impermanent loss exposure, and APR performance in real-time."
+        }
+      }
+    },
+    "disclaimer": {
+      "title": "Educational Simulation Only",
+      "description": "This platform employs simplified mathematical models for educational demonstration. Real-world DeFi returns depend on market volatility, trading volume, gas costs, and numerous external factors.",
+      "footer": "Not financial advice. Always conduct independent research before deploying capital."
+    },
+    "finalCta": {
+      "text": "Ready to explore DeFi mechanics?",
+      "button": "Begin Simulation"
+    }
+  },
+  "simulator": {
+    "title": "Uniswap V3 Position Builder",
+    "subtitle": "Create a concentrated liquidity position with custom price ranges"
+  },
+  "wizard": {
+    "steps": {
+      "selectPool": "Select Pool",
+      "setRange": "Set Range",
+      "depositAmount": "Deposit Amount",
+      "summary": "Summary"
+    },
+    "navigation": {
+      "back": "Back",
+      "next": "Next",
+      "stepOf": "Step {{current}} of {{total}}",
+      "createPosition": "Create New Position"
+    }
+  },
+  "positions": {
+    "title": "Your Positions",
+    "subtitle": "Track and manage your liquidity positions",
+    "newPosition": "New Position",
+    "filters": {
+      "open": "Open",
+      "closed": "Closed"
+    },
+    "empty": {
+      "title": "No positions yet",
+      "description": "Create your first liquidity position to get started",
+      "button": "Create Position"
+    },
+    "emptyFilter": "No {{filter}} positions",
+    "status": {
+      "inRange": "In Range",
+      "outOfRange": "Out of Range",
+      "earningFees": "Earning fees"
+    },
+    "created": "Created {{date}}",
+    "closed": "Closed {{date}}",
+    "metrics": {
+      "positionValue": "Position Value",
+      "estAPR": "Est. APR",
+      "currentPrice": "Current Price",
+      "priceRange": "Price Range",
+      "rangeWidth": "Range Width"
+    }
+  },
+  "calculator": {
+    "title": "DeFi Calculators",
+    "subtitle": "Advanced calculators powered by real DeFi protocols",
+    "modes": {
+      "swap": "Swap Calculator",
+      "il": "Impermanent Loss",
+      "staking": "Staking Rewards",
+      "lp": "LP Calculator"
+    },
+    "swap": {
+      "title": "Swap Calculator",
+      "description": "Calculate swap output, price impact, and fees using the constant product formula",
+      "inputs": {
+        "amountIn": "Amount In (Token 0)",
+        "reserve0": "Reserve Token 0",
+        "reserve1": "Reserve Token 1",
+        "feeTier": "Fee Tier"
+      },
+      "button": "Calculate Swap",
+      "results": {
+        "title": "Results",
+        "amountOut": "Amount Out",
+        "effectivePrice": "Effective Price",
+        "spotPrice": "Spot Price",
+        "priceImpact": "Price Impact",
+        "feeAmount": "Fee Amount",
+        "analysis": "Analysis",
+        "highImpact": "High price impact! Consider splitting into smaller trades.",
+        "moderateImpact": "Moderate price impact. This trade will move the market.",
+        "lowImpact": "Low price impact. Good liquidity for this trade size.",
+        "enterValues": "Enter values and click Calculate to see results"
+      }
+    },
+    "il": {
+      "title": "Impermanent Loss Calculator",
+      "description": "Understand how price changes affect your LP position",
+      "inputs": {
+        "initialPrice": "Initial Price",
+        "currentPrice": "Current Price"
+      },
+      "button": "Calculate Scenarios",
+      "current": {
+        "title": "Current Impermanent Loss",
+        "priceChange": "Price change: {{change}}%"
+      },
+      "scenarios": {
+        "title": "IL Scenarios",
+        "multiplier": "Price Multiplier",
+        "newPrice": "New Price",
+        "priceChange": "Price Change",
+        "ilPercent": "IL %"
+      }
+    },
+    "staking": {
+      "title": "Staking Rewards Calculator",
+      "description": "Project your staking rewards over time",
+      "inputs": {
+        "stakeAmount": "Stake Amount ($)",
+        "apr": "APR (%)",
+        "days": "Staking Period (days)"
+      },
+      "button": "Calculate Rewards",
+      "results": {
+        "title": "Projected Rewards",
+        "stakedAmount": "Staked Amount",
+        "rewardsEarned": "Rewards Earned",
+        "totalValue": "Total Value",
+        "percentGain": "Percent Gain",
+        "dailyRewards": "Daily Rewards",
+        "summary": "By staking ${{amount}} for {{days}} days at {{apr}}% APR, you'll earn approximately ${{rewards}} in rewards.",
+        "enterValues": "Enter values and click Calculate to see projections"
+      }
+    },
+    "lp": {
+      "title": "LP Share Calculator",
+      "description": "Calculate LP shares from token amounts using geometric mean formula",
+      "inputs": {
+        "amount0": "Token 0 Amount (e.g., ETH)",
+        "amount1": "Token 1 Amount (e.g., USDC)"
+      },
+      "button": "Calculate LP Shares",
+      "results": {
+        "title": "Your LP Position",
+        "deposited0": "Token 0 Deposited",
+        "deposited1": "Token 1 Deposited",
+        "lpShares": "LP Shares",
+        "impliedPrice": "Implied Price",
+        "formula": "LP Shares Formula",
+        "formulaText": "LP Shares = √(amount0 × amount1)",
+        "formulaNote": "This geometric mean formula ensures balanced liquidity provision.",
+        "enterValues": "Enter token amounts to calculate LP shares"
+      }
+    }
+  },
+  "flashLoan": {
+    "title": "Flash Loan Simulator",
+    "subtitle": "Learn how flash loans work through interactive step-by-step simulations",
+    "banner": {
+      "title": "What are Flash Loans?",
+      "description1": "Flash loans are uncollateralized loans that must be borrowed and repaid within the same transaction. If you cannot repay, the entire transaction reverts - like it never happened!",
+      "description2": "Use cases: Arbitrage, Liquidations, Collateral Swaps • Fee: {{fee}}% • Risk: Only gas fees if transaction fails"
+    },
+    "scenarios": {
+      "arbitrage": {
+        "title": "Arbitrage",
+        "description": "Buy low on DEX A, sell high on DEX B",
+        "difficulty": "Beginner",
+        "profit": "Low-Medium"
+      },
+      "liquidation": {
+        "title": "Liquidation",
+        "description": "Liquidate undercollateralized positions",
+        "difficulty": "Intermediate",
+        "profit": "Medium-High"
+      },
+      "collateral": {
+        "title": "Collateral Swap",
+        "description": "Swap collateral without closing position",
+        "difficulty": "Advanced",
+        "profit": "Utility"
+      }
+    },
+    "parameters": {
+      "title": "Configure Parameters",
+      "loanAmount": "Flash Loan Amount ($)",
+      "buyPrice": "Buy Price on DEX A ($)",
+      "sellPrice": "Sell Price on DEX B ($)",
+      "priceDiff": "Price Difference:",
+      "debt": "Borrower's Debt ($)",
+      "collateral": "Collateral Value ($)",
+      "bonus": "Liquidation Bonus: {{bonus}}%",
+      "existingDebt": "Existing Debt ($)",
+      "oldCollateral": "Old Collateral Value ($)",
+      "newCollateral": "New Collateral Value ($)"
+    },
+    "buttons": {
+      "run": "Run Simulation",
+      "stepByStep": "Step-by-Step",
+      "reset": "Reset"
+    },
+    "visualization": {
+      "title": "Step-by-Step Visualization",
+      "empty": "Configure parameters and run simulation",
+      "step": "Step {{index}}: {{name}}",
+      "profit": "Profit: ${{amount}}",
+      "shortfall": "Shortfall: ${{amount}}"
+    },
+    "results": {
+      "title": "Simulation Results",
+      "success": "Transaction Successful!",
+      "successDesc": "Flash loan repaid, profit secured",
+      "failed": "Transaction Failed!",
+      "failedDesc": "Insufficient funds - entire transaction reverted",
+      "loanAmount": "Loan Amount",
+      "fee": "Flash Loan Fee",
+      "netProfit": "Net Profit/Loss",
+      "tokensReceived": "Tokens Received",
+      "profitPercent": "Profit Percentage"
+    }
+  },
+  "learn": {
+    "title": "Learn DeFi",
+    "subtitle": "Master the fundamentals of liquidity provision and decentralized finance",
+    "quickTips": {
+      "title": "Quick Tips",
+      "tip1": "Start with small allocations to understand the mechanics",
+      "tip2": "Monitor price changes to see how they affect IL",
+      "tip3": "Compare different pool allocations to optimize returns",
+      "tip4": "Fees accumulate over time - longer simulations show more impact",
+      "tip5": "Diversification across pools can reduce overall risk"
+    },
+    "keyMetrics": {
+      "title": "Key Metrics to Watch",
+      "priceRatio": {
+        "title": "Price Ratio",
+        "description": "Current price vs. initial price - determines IL"
+      },
+      "feeRate": {
+        "title": "Fee Generation Rate",
+        "description": "Based on APR and time elapsed"
+      },
+      "netReturn": {
+        "title": "Net Return",
+        "description": "Fees earned minus impermanent loss"
+      },
+      "daysElapsed": {
+        "title": "Days Elapsed",
+        "description": "Time since simulation start - affects total fees"
+      }
+    },
+    "resources": {
+      "title": "Continue Learning",
+      "description": "Explore these resources to deepen your understanding of DeFi and liquidity provision:",
+      "uniswap": {
+        "title": "Uniswap Docs",
+        "description": "Official documentation and guides"
+      },
+      "ethereum": {
+        "title": "Ethereum DeFi",
+        "description": "Introduction to decentralized finance"
+      },
+      "il": {
+        "title": "IL Deep Dive",
+        "description": "Detailed explanation of impermanent loss"
+      }
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "token0": "Token 0",
+    "token1": "Token 1",
+    "price": "Price",
+    "amount": "Amount",
+    "total": "Total",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "close": "Close",
+    "delete": "Delete",
+    "edit": "Edit",
+    "save": "Save"
+  }
+}

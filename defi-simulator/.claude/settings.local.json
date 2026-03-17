@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev:*)",
+      "Bash(npm install)",
+      "Bash(npx skills add:*)",
+      "Skill(ui-ux-pro-max)",
+      "Bash(python:*)",
+      "Bash(winget install:*)",
+      "Bash(where:*)",
+      "Bash(\"C:\\Users\\david\\AppData\\Local\\Python\\bin\\python.exe\" skills/ui-ux-pro-max/scripts/search.py \"defi fintech educational dashboard crypto professional\" --design-system --persist -p \"DeFi Liquidity Simulator\" -f markdown)",
+      "Bash(dir:*)",
+      "Bash(npx skills:*)",
+      "Bash(npm install:*)",
+      "Bash(mkdir:*)",
+      "Bash(timeout:*)",
+      "Bash(\"C:\\Users\\david\\AppData\\Local\\Python\\bin\\python.exe\" skills/ui-ux-pro-max/scripts/search.py \"DeFi fintech educational dashboard crypto professional\" --design-system --persist -p \"DeFi Liquidity Simulator\" -f markdown)",
+      "Bash(\"C:\\Users\\david\\AppData\\Local\\Python\\bin\\python.exe\" \".claude\\skills\\ui-ux-pro-max\\scripts\\search.py\" \"DeFi fintech educational dashboard crypto professional\" --design-system --persist -p \"DeFi Liquidity Simulator\" -f markdown)",
+      "Bash(\"C:\\Users\\david\\AppData\\Local\\Python\\bin\\python.exe\" \".agents\\skills\\ui-ux-pro-max\\scripts\\search.py\" \"DeFi fintech educational dashboard crypto professional\" --design-system --persist -p \"DeFi Liquidity Simulator\" -f markdown)",
+      "Bash(cat:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

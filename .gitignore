@@ -1,0 +1,18 @@
+# macOS metadata
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+
+# Editor
+.vscode/
+*.swp
+*.swo
+
+# Node
+node_modules/
+dist/
+.env
+
+# Windows reserved device name (created by some tools on non-Windows)
+nul

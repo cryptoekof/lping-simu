@@ -1,0 +1,343 @@
+{
+  "sidebar": {
+    "title": "Simulador DeFi",
+    "subtitle": "Protocolo Uniswap V3",
+    "nav": {
+      "home": "Inicio",
+      "simulator": "Simulador",
+      "positions": "Posiciones",
+      "calculator": "Calculadora",
+      "flashLoan": "Préstamo Flash",
+      "learn": "Aprender"
+    },
+    "disclaimer": "Plataforma de simulación educativa. No es asesoramiento financiero."
+  },
+  "home": {
+    "badge": "Impulsado por Uniswap V3",
+    "title": "Simulador de Pool de Liquidez DeFi",
+    "subtitle": "Domina la provisión de liquidez de Uniswap V3 a través de simulación interactiva. Explora tarifas, pérdida impermanente y dinámicas de APR con datos de mercado en vivo — cero riesgo de capital.",
+    "cta": {
+      "launch": "Iniciar Simulador →",
+      "docs": "Leer Documentación"
+    },
+    "features": {
+      "liveData": {
+        "title": "Datos de Mercado en Vivo",
+        "description": "Precios en tiempo real a través de la API de Coinbase para pares ETH, BTC y SOL"
+      },
+      "feeSimulation": {
+        "title": "Simulación de Tarifas",
+        "description": "Generación de tarifas lineal modelada en proyecciones realistas de APR"
+      },
+      "riskAnalytics": {
+        "title": "Análisis de Riesgo",
+        "description": "Cálculos de pérdida impermanente en tiempo real y seguimiento de posiciones"
+      },
+      "education": {
+        "title": "Educación DeFi",
+        "description": "Guías detalladas sobre estrategias y mecánicas de provisión de liquidez"
+      }
+    },
+    "howItWorks": {
+      "title": "Cómo Funciona",
+      "subtitle": "Cuatro pasos simples para dominar la provisión de liquidez",
+      "steps": {
+        "step1": {
+          "title": "Configurar Tesorería",
+          "description": "Inicializar asignación de capital virtual (predeterminado $10,000) para simulación de posiciones."
+        },
+        "step2": {
+          "title": "Seleccionar Pares de Pool",
+          "description": "Elegir pools de liquidez (ETH/USDC, BTC/USDC, SOL/USDC) con precios de mercado en vivo."
+        },
+        "step3": {
+          "title": "Desplegar Capital",
+          "description": "Distribuir asignación de tesorería entre pools con controles de precisión y selección de rango de precios."
+        },
+        "step4": {
+          "title": "Monitorear y Analizar",
+          "description": "Rastrear acumulación de tarifas, exposición a pérdida impermanente y rendimiento APR en tiempo real."
+        }
+      }
+    },
+    "disclaimer": {
+      "title": "Solo Simulación Educativa",
+      "description": "Esta plataforma emplea modelos matemáticos simplificados para demostración educativa. Los retornos DeFi del mundo real dependen de la volatilidad del mercado, el volumen de operaciones, los costos de gas y numerosos factores externos.",
+      "footer": "No es asesoramiento financiero. Siempre realice una investigación independiente antes de desplegar capital."
+    },
+    "finalCta": {
+      "text": "¿Listo para explorar las mecánicas DeFi?",
+      "button": "Comenzar Simulación"
+    }
+  },
+  "simulator": {
+    "title": "Constructor de Posición Uniswap V3",
+    "subtitle": "Crea una posición de liquidez concentrada con rangos de precio personalizados"
+  },
+  "wizard": {
+    "steps": {
+      "selectPool": "Seleccionar Pool",
+      "setRange": "Establecer Rango",
+      "depositAmount": "Monto de Depósito",
+      "summary": "Resumen"
+    },
+    "navigation": {
+      "back": "Atrás",
+      "next": "Siguiente",
+      "stepOf": "Paso {{current}} de {{total}}",
+      "createPosition": "Crear Nueva Posición"
+    }
+  },
+  "positions": {
+    "title": "Tus Posiciones",
+    "subtitle": "Rastrea y gestiona tus posiciones de liquidez",
+    "newPosition": "Nueva Posición",
+    "filters": {
+      "open": "Abiertas",
+      "closed": "Cerradas"
+    },
+    "empty": {
+      "title": "Aún no hay posiciones",
+      "description": "Crea tu primera posición de liquidez para comenzar",
+      "button": "Crear Posición"
+    },
+    "emptyFilter": "No hay posiciones {{filter}}",
+    "status": {
+      "inRange": "En Rango",
+      "outOfRange": "Fuera de Rango",
+      "earningFees": "Ganando tarifas"
+    },
+    "created": "Creada {{date}}",
+    "closed": "Cerrada {{date}}",
+    "metrics": {
+      "positionValue": "Valor de Posición",
+      "estAPR": "APR Estimado",
+      "currentPrice": "Precio Actual",
+      "priceRange": "Rango de Precio",
+      "rangeWidth": "Amplitud del Rango"
+    }
+  },
+  "calculator": {
+    "title": "Calculadoras DeFi",
+    "subtitle": "Calculadoras avanzadas impulsadas por protocolos DeFi reales",
+    "modes": {
+      "swap": "Calculadora de Intercambio",
+      "il": "Pérdida Impermanente",
+      "staking": "Recompensas de Staking",
+      "lp": "Calculadora LP"
+    },
+    "swap": {
+      "title": "Calculadora de Intercambio",
+      "description": "Calcula salida de intercambio, impacto de precio y tarifas usando la fórmula de producto constante",
+      "inputs": {
+        "amountIn": "Cantidad Entrada (Token 0)",
+        "reserve0": "Reserva Token 0",
+        "reserve1": "Reserva Token 1",
+        "feeTier": "Nivel de Tarifa"
+      },
+      "button": "Calcular Intercambio",
+      "results": {
+        "title": "Resultados",
+        "amountOut": "Cantidad Salida",
+        "effectivePrice": "Precio Efectivo",
+        "spotPrice": "Precio Spot",
+        "priceImpact": "Impacto de Precio",
+        "feeAmount": "Monto de Tarifa",
+        "analysis": "Análisis",
+        "highImpact": "¡Alto impacto de precio! Considere dividir en operaciones más pequeñas.",
+        "moderateImpact": "Impacto de precio moderado. Esta operación moverá el mercado.",
+        "lowImpact": "Bajo impacto de precio. Buena liquidez para este tamaño de operación.",
+        "enterValues": "Ingrese valores y haga clic en Calcular para ver resultados"
+      }
+    },
+    "il": {
+      "title": "Calculadora de Pérdida Impermanente",
+      "description": "Comprenda cómo los cambios de precio afectan su posición LP",
+      "inputs": {
+        "initialPrice": "Precio Inicial",
+        "currentPrice": "Precio Actual"
+      },
+      "button": "Calcular Escenarios",
+      "current": {
+        "title": "Pérdida Impermanente Actual",
+        "priceChange": "Cambio de precio: {{change}}%"
+      },
+      "scenarios": {
+        "title": "Escenarios de PI",
+        "multiplier": "Multiplicador de Precio",
+        "newPrice": "Nuevo Precio",
+        "priceChange": "Cambio de Precio",
+        "ilPercent": "PI %"
+      }
+    },
+    "staking": {
+      "title": "Calculadora de Recompensas de Staking",
+      "description": "Proyecta tus recompensas de staking a lo largo del tiempo",
+      "inputs": {
+        "stakeAmount": "Monto de Stake ($)",
+        "apr": "APR (%)",
+        "days": "Período de Staking (días)"
+      },
+      "button": "Calcular Recompensas",
+      "results": {
+        "title": "Recompensas Proyectadas",
+        "stakedAmount": "Monto en Stake",
+        "rewardsEarned": "Recompensas Ganadas",
+        "totalValue": "Valor Total",
+        "percentGain": "Ganancia Porcentual",
+        "dailyRewards": "Recompensas Diarias",
+        "summary": "Al hacer stake de ${{amount}} durante {{days}} días al {{apr}}% APR, ganarás aproximadamente ${{rewards}} en recompensas.",
+        "enterValues": "Ingrese valores y haga clic en Calcular para ver proyecciones"
+      }
+    },
+    "lp": {
+      "title": "Calculadora de Participaciones LP",
+      "description": "Calcula participaciones LP desde montos de tokens usando fórmula de media geométrica",
+      "inputs": {
+        "amount0": "Cantidad Token 0 (ej., ETH)",
+        "amount1": "Cantidad Token 1 (ej., USDC)"
+      },
+      "button": "Calcular Participaciones LP",
+      "results": {
+        "title": "Tu Posición LP",
+        "deposited0": "Token 0 Depositado",
+        "deposited1": "Token 1 Depositado",
+        "lpShares": "Participaciones LP",
+        "impliedPrice": "Precio Implícito",
+        "formula": "Fórmula de Participaciones LP",
+        "formulaText": "Participaciones LP = √(cantidad0 × cantidad1)",
+        "formulaNote": "Esta fórmula de media geométrica asegura una provisión de liquidez equilibrada.",
+        "enterValues": "Ingrese cantidades de tokens para calcular participaciones LP"
+      }
+    }
+  },
+  "flashLoan": {
+    "title": "Simulador de Préstamos Flash",
+    "subtitle": "Aprende cómo funcionan los préstamos flash a través de simulaciones interactivas paso a paso",
+    "banner": {
+      "title": "¿Qué son los Préstamos Flash?",
+      "description1": "Los préstamos flash son préstamos sin colateral que deben ser tomados y repagados dentro de la misma transacción. Si no puedes repagar, toda la transacción se revierte - ¡como si nunca hubiera sucedido!",
+      "description2": "Casos de uso: Arbitraje, Liquidaciones, Intercambio de Colateral • Tarifa: {{fee}}% • Riesgo: Solo tarifas de gas si la transacción falla"
+    },
+    "scenarios": {
+      "arbitrage": {
+        "title": "Arbitraje",
+        "description": "Compra bajo en DEX A, vende alto en DEX B",
+        "difficulty": "Principiante",
+        "profit": "Bajo-Medio"
+      },
+      "liquidation": {
+        "title": "Liquidación",
+        "description": "Liquida posiciones subcolateralizadas",
+        "difficulty": "Intermedio",
+        "profit": "Medio-Alto"
+      },
+      "collateral": {
+        "title": "Intercambio de Colateral",
+        "description": "Intercambia colateral sin cerrar posición",
+        "difficulty": "Avanzado",
+        "profit": "Utilidad"
+      }
+    },
+    "parameters": {
+      "title": "Configurar Parámetros",
+      "loanAmount": "Monto de Préstamo Flash ($)",
+      "buyPrice": "Precio de Compra en DEX A ($)",
+      "sellPrice": "Precio de Venta en DEX B ($)",
+      "priceDiff": "Diferencia de Precio:",
+      "debt": "Deuda del Prestatario ($)",
+      "collateral": "Valor del Colateral ($)",
+      "bonus": "Bono de Liquidación: {{bonus}}%",
+      "existingDebt": "Deuda Existente ($)",
+      "oldCollateral": "Valor del Colateral Antiguo ($)",
+      "newCollateral": "Valor del Colateral Nuevo ($)"
+    },
+    "buttons": {
+      "run": "Ejecutar Simulación",
+      "stepByStep": "Paso a Paso",
+      "reset": "Reiniciar"
+    },
+    "visualization": {
+      "title": "Visualización Paso a Paso",
+      "empty": "Configure parámetros y ejecute simulación",
+      "step": "Paso {{index}}: {{name}}",
+      "profit": "Ganancia: ${{amount}}",
+      "shortfall": "Déficit: ${{amount}}"
+    },
+    "results": {
+      "title": "Resultados de Simulación",
+      "success": "¡Transacción Exitosa!",
+      "successDesc": "Préstamo flash repagado, ganancia asegurada",
+      "failed": "¡Transacción Fallida!",
+      "failedDesc": "Fondos insuficientes - toda la transacción se revirtió",
+      "loanAmount": "Monto del Préstamo",
+      "fee": "Tarifa del Préstamo Flash",
+      "netProfit": "Ganancia/Pérdida Neta",
+      "tokensReceived": "Tokens Recibidos",
+      "profitPercent": "Porcentaje de Ganancia"
+    }
+  },
+  "learn": {
+    "title": "Aprender DeFi",
+    "subtitle": "Domina los fundamentos de la provisión de liquidez y finanzas descentralizadas",
+    "quickTips": {
+      "title": "Consejos Rápidos",
+      "tip1": "Comienza con asignaciones pequeñas para entender las mecánicas",
+      "tip2": "Monitorea los cambios de precio para ver cómo afectan la PI",
+      "tip3": "Compara diferentes asignaciones de pool para optimizar retornos",
+      "tip4": "Las tarifas se acumulan con el tiempo - simulaciones más largas muestran más impacto",
+      "tip5": "La diversificación entre pools puede reducir el riesgo general"
+    },
+    "keyMetrics": {
+      "title": "Métricas Clave a Observar",
+      "priceRatio": {
+        "title": "Ratio de Precio",
+        "description": "Precio actual vs. precio inicial - determina PI"
+      },
+      "feeRate": {
+        "title": "Tasa de Generación de Tarifas",
+        "description": "Basada en APR y tiempo transcurrido"
+      },
+      "netReturn": {
+        "title": "Retorno Neto",
+        "description": "Tarifas ganadas menos pérdida impermanente"
+      },
+      "daysElapsed": {
+        "title": "Días Transcurridos",
+        "description": "Tiempo desde el inicio de la simulación - afecta tarifas totales"
+      }
+    },
+    "resources": {
+      "title": "Continuar Aprendiendo",
+      "description": "Explora estos recursos para profundizar tu comprensión de DeFi y provisión de liquidez:",
+      "uniswap": {
+        "title": "Documentación Uniswap",
+        "description": "Documentación oficial y guías"
+      },
+      "ethereum": {
+        "title": "DeFi en Ethereum",
+        "description": "Introducción a las finanzas descentralizadas"
+      },
+      "il": {
+        "title": "Inmersión Profunda en PI",
+        "description": "Explicación detallada de la pérdida impermanente"
+      }
+    }
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "token0": "Token 0",
+    "token1": "Token 1",
+    "price": "Precio",
+    "amount": "Cantidad",
+    "total": "Total",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "close": "Cerrar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "save": "Guardar"
+  }
+}
