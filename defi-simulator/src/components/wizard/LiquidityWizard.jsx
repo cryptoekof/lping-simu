@@ -9,6 +9,7 @@ import Step2PriceRange from './Step2PriceRange';
 import Step3TokenAmounts from './Step3TokenAmounts';
 import Step4Summary from './Step4Summary';
 import { POOLS } from '../../utils/api';
+import { getLiquidityForAmounts, priceToSqrtPrice } from '../../utils/uniswapV3Math';
 import { useTranslation } from 'react-i18next';
 import { cn } from '../../lib/utils';
 
@@ -73,13 +74,26 @@ export default function LiquidityWizard({ prices }) {
   };
 
   const handleFinish = () => {
+    // Compute liquidity at the exact price used for amounts, so getPositionStatus
+    // never has to recover it from potentially mismatched stored data.
+    const { amount0, amount1 } = wizardData.tokenAmounts;
+    const price = wizardData.currentPrice;
+    const liquidity = getLiquidityForAmounts(
+      amount0,
+      amount1,
+      priceToSqrtPrice(price),
+      priceToSqrtPrice(wizardData.priceRange.lower),
+      priceToSqrtPrice(wizardData.priceRange.upper)
+    );
+
     // Save position to localStorage
     const newPosition = {
       id: Date.now().toString(),
       poolId: wizardData.selectedPool,
-      initialPrice: wizardData.currentPrice,
+      initialPrice: price,
       priceRange: wizardData.priceRange,
       tokenAmounts: wizardData.tokenAmounts,
+      liquidity,
       createdAt: new Date().toISOString(),
     };
 

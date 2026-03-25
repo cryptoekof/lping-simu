@@ -206,7 +206,8 @@ export default function Positions() {
                 position.priceRange.upper,
                 position.tokenAmounts.amount0,
                 position.tokenAmounts.amount1,
-                position.initialPrice
+                position.initialPrice,
+                position.liquidity ?? null
               );
 
               const apr = calculateDynamicAPR(
@@ -331,21 +332,21 @@ export default function Positions() {
                         </div>
                       </div>
 
-                      {/* Token Amounts */}
-                      <div className="pt-3 border-t border-border/50 space-y-2 text-sm">
-                        <div className="flex justify-between">
-                          <span className="text-muted-foreground">{pool?.token0}</span>
-                          <span className="font-mono">
-                            {formatNumber(position.tokenAmounts.amount0)} ({positionStatus.proportion0.toFixed(1)}%)
-                          </span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span className="text-muted-foreground">{pool?.token1}</span>
-                          <span className="font-mono">
-                            {formatNumber(position.tokenAmounts.amount1)} ({positionStatus.proportion1.toFixed(1)}%)
-                          </span>
-                        </div>
-                      </div>
+                       {/* Token Amounts */}
+                       <div className="pt-3 border-t border-border/50 space-y-2 text-sm">
+                         <div className="flex justify-between">
+                           <span className="text-muted-foreground">{pool?.token0}</span>
+                           <span className="font-mono">
+                             {formatNumber(positionStatus.amount0)} ({positionStatus.proportion0.toFixed(1)}%)
+                           </span>
+                         </div>
+                         <div className="flex justify-between">
+                           <span className="text-muted-foreground">{pool?.token1}</span>
+                           <span className="font-mono">
+                             {formatNumber(positionStatus.amount1)} ({positionStatus.proportion1.toFixed(1)}%)
+                           </span>
+                         </div>
+                       </div>
                     </div>
                   </CardContent>
                 </Card>

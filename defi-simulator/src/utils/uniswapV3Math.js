@@ -247,7 +247,7 @@ export function calculatePositionFromAmount(
  * @param {number} initialPrice - Price when position was created (optional, defaults to currentPrice)
  * @returns {Object} - Position status details
  */
-export function getPositionStatus(currentPrice, priceLower, priceUpper, amount0Initial, amount1Initial, initialPrice = null) {
+export function getPositionStatus(currentPrice, priceLower, priceUpper, amount0Initial, amount1Initial, initialPrice = null, precomputedLiquidity = null) {
   const inRange = currentPrice >= priceLower && currentPrice <= priceUpper;
   const priceAtCreation = initialPrice || currentPrice;
 
@@ -260,18 +260,20 @@ export function getPositionStatus(currentPrice, priceLower, priceUpper, amount0I
     status = 'in_range';
   }
 
-  // Calculate the liquidity from initial amounts at the initial price
-  const sqrtPriceInitial = priceToSqrtPrice(priceAtCreation);
   const sqrtPriceLower = priceToSqrtPrice(priceLower);
   const sqrtPriceUpper = priceToSqrtPrice(priceUpper);
 
-  const liquidity = getLiquidityForAmounts(
-    amount0Initial,
-    amount1Initial,
-    sqrtPriceInitial,
-    sqrtPriceLower,
-    sqrtPriceUpper
-  );
+  // Use stored liquidity when available (avoids Math.min mismatch if initialPrice
+  // drifted from the price at which tokenAmounts were computed).
+  const liquidity = precomputedLiquidity != null && precomputedLiquidity > 0
+    ? precomputedLiquidity
+    : getLiquidityForAmounts(
+        amount0Initial,
+        amount1Initial,
+        priceToSqrtPrice(priceAtCreation),
+        sqrtPriceLower,
+        sqrtPriceUpper
+      );
 
   // Get current token amounts based on CURRENT price and the calculated liquidity
   const currentAmounts = getTokenAmounts(liquidity, currentPrice, priceLower, priceUpper);
